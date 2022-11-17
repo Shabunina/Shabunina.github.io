@@ -1,33 +1,60 @@
 body {
   margin: 0;
+  padding: 0;
   color: rgb(103, 42, 42);
   font-family: "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 200%;
+  
   
 }
+.theme-button {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+border: 1px solid rgb(72, 63, 63);
+background-color: rgb(161, 124, 124, 0.5);
+width: 200px;
+}
 
+main {
+
+  margin: 0;
+}
+.light-theme {
+
+  background-color: white;
+}
+
+
+
+.dark-theme {
+
+  background-color: rgb(161, 124, 124, 0.5);
+}
 .site-header {
   
   padding: 80px;
-  min-width: 800px;
-  height: 200px;
+  width: auto;
+  height: 150px;
   background: #847462 no-repeat center url('img/IMG_8037.jpg');
-  width: 100%;
   background-size: cover;
+  margin: 0;
 
 }
 
 h1 {
 position: absolute;
 top: 0px;
-right: 100px;
+right: 400px;
 color: rgb(103, 42, 42);
 
 }
 
 .skills {
+  margin:0;
 position: absolute;
-right: 100px;
+right: 520px;
 font-size: 20px;
 font-weight: 700;
 
@@ -35,33 +62,36 @@ font-weight: 700;
 }
 
 .menu {
-position: absolute;
-top: 350px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  vertical-align: top;
 list-style: none;
 width: 800px;
+margin:0;
 }
 
 .menu a {
 
 color:rgb(103, 42, 42);
-margin: 10px;
-
+border: 1px solid rgb(72, 63, 63);
+background-color: rgb(161, 124, 124, 0.5);
+margin: 0;
 list-style: none;
-font-size: 18px;
+font-size: 16px;
+font-weight: 600;
 
 }
 .photo-alena  img {
 position: absolute;
 right: 160px;
-bottom: 150px;
+top: 220px;
 border-radius: 100%;
 border: 1px solid black;
  
 }
 
 .photo-3 {
-margin: 80px 50px;
+margin: 40px;
 
 }
 
@@ -69,6 +99,7 @@ margin: 80px 50px;
   display:grid;
   grid-template-columns: 1fr 2fr;
   margin: 20px;
+  margin-left: 0;
  
   
   }
@@ -76,19 +107,14 @@ margin: 80px 50px;
   .titul h2
 
   {
-    margin: 80px;
-    margin-top: 120px;;
-    margin-bottom: 40px;
     font-size: 18px;
-    color:black;
+    color:rgb(103, 42, 42);;
 
   }
 
   .titul p {
 
-    color:black;
-    text-decoration: none;
-    margin: 80px;
+    color:rgb(103, 42, 42);
     margin-top: 30px;
     margin-top: 0;
 
@@ -98,19 +124,17 @@ margin: 80px 50px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin: 80px;
-    margin-top: 0;
+    width: 480px;
+    margin: 20px;
    
   }
 
   h2 {
 
-    margin: 80px;
-    margin-top: 120px;;
-    margin-bottom: 40px;
+    margin-top: 35px;;
+    margin-left: 20px;
     font-size: 18px;
-    color:black;
+    color: rgb(103, 42, 42);
   }
 }
 
@@ -119,7 +143,7 @@ margin: 80px 50px;
   padding: 80px;
   min-width: 800px;
   height: 200px;
-
+  margin: 0;
 }
 
 .site-footer img {
@@ -143,4 +167,11 @@ margin: 80px 50px;
   color: #ffffff;
   vertical-align: center;
   
+}
+
+.calculator {
+  margin: 40px 20px 80px 20px;
+  padding: 30px;
+  width: 300px;
+  border: 2px solid rgb(103, 42, 42);
 }
