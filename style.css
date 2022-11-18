@@ -92,7 +92,15 @@ h1 a:hover {
   border: 2px solid rgb(72, 63, 63);
   background-color: rgba(220, 200, 200, 0.9);
 
+
 }
+
+.menu a:active {
+  border: 2px solid rgb(72, 63, 63);
+  background-color: rgba(74, 45, 45, 0.9);
+  }
+
+
 .photo-alena  img {
 position: absolute;
 right: 160px;
